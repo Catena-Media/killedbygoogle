@@ -1,10 +1,10 @@
 {
-  "name": "killedbygoogle",
-  "version": "3.0.0",
-  "description": "killedbygoogle.com",
+  "name": "killed-by-catena-media",
+  "version": "1.0.0",
+  "description": "Internal Catena Media project graveyard",
   "main": "src/index.js",
-  "repository": "git@github.com:codyogden/killedbygoogle.git",
-  "author": "Cody Ogden",
+  "repository": "git@github.com:Catena-Media/killedbygoogle.git",
+  "author": "Catena Media",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.23.0",
@@ -40,6 +40,9 @@
     "preview": "pnpm build && next export && npx http-server out/ -p 3000",
     "kill": "bin/kill",
     "lint": "next lint",
-    "test": "jest graveyard.test.ts"
+    "test": "jest graveyard.test.ts",
+    "pages:build": "next build",
+    "pages:dev": "wrangler pages dev out --compatibility-date=2024-09-24",
+    "pages:deploy": "wrangler pages deploy out"
   }
 }

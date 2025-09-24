@@ -29,7 +29,7 @@ export default function RootLayout({
                     async
                     defer
                     data-website-id={process.env.UMAMI_ID}
-                    data-host-url='https://killedbygoogle.com'
+                    data-host-url={process.env.NEXT_PUBLIC_SITE_URL || 'https://killedbycatena.na.catenacloud.io'}
                     src="/_next/static/umami.js"
                 />
                 {children}

@@ -2,8 +2,10 @@ import { NextResponse } from 'next/server';
 import slugify from 'slugify';
 import { Product, ProductType } from '../../../types/Product';
 
+export const dynamic = 'force-static';
+
 export async function GET() {
-    const data = await require('../../../graveyard.json');
+    const data = await require('../../../graveyard-catena.json');
     
     slugify.extend({
         '+': '-plus',

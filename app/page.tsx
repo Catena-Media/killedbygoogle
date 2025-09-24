@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import slugify from 'slugify';
 
 // Data
-import graveyard from '../graveyard.json';
+import graveyard from '../graveyard-catena.json';
 
 // Components
 import Header from '../components/Header';
@@ -11,27 +11,27 @@ import Footer from '../components/Footer';
 import { ProductWithSlug, ProductType } from '../types/Product';
 
 export const metadata: Metadata = {
-    title: 'Google Graveyard - Killed by Google',
-    description: 'Killed by Google is the Google Graveyard. A full list of dead products killed by Google in the Google Cemetery.',
-    keywords: ['Google', 'graveyard', 'killed', 'products', 'services'],
-    authors: [{ name: 'Cody Ogden' }],
-    creator: 'Cody Ogden',
-    publisher: 'Cody Ogden',
-    metadataBase: new URL('https://killedbygoogle.com'),
+    title: 'Catena Media Graveyard - Killed by Catena Media',
+    description: 'Killed by Catena Media is the Catena Media Graveyard. A full list of deprecated projects and products discontinued by Catena Media.',
+    keywords: ['Catena Media', 'graveyard', 'killed', 'deprecated', 'projects', 'products', 'services'],
+    authors: [{ name: 'Catena Media' }],
+    creator: 'Catena Media',
+    publisher: 'Catena Media',
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://killedbycatena.na.catenacloud.io'),
     alternates: {
         canonical: '/',
     },
     openGraph: {
-        title: 'Killed by Google',
-        description: 'Killed by Google is the open source list of dead Google products, services, and devices. It serves as a tribute and memorial of beloved services and products killed by Google.',
-        url: 'https://killedbygoogle.com',
-        siteName: 'Killed by Google',
+        title: 'Killed by Catena Media',
+        description: 'Killed by Catena Media is the internal list of deprecated Catena Media projects, services, and products. It serves as a tribute and memorial of beloved projects discontinued by Catena Media.',
+        url: process.env.NEXT_PUBLIC_SITE_URL || 'https://killedbycatena.na.catenacloud.io',
+        siteName: 'Killed by Catena Media',
         images: [
             {
                 url: '/social/card.png',
                 width: 1200,
                 height: 630,
-                alt: 'Killed by Google',
+                alt: 'Killed by Catena Media',
             },
         ],
         locale: 'en_US',
@@ -39,17 +39,11 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Killed by Google',
-        description: 'Killed by Google is the Google Graveyard. A full list of dead products killed by Google in the Google Cemetery.',
-        site: '@killedbygoogle',
-        creator: '@killedbygoogle',
+        title: 'Killed by Catena Media',
+        description: 'Killed by Catena Media is the Catena Media Graveyard. A full list of deprecated projects discontinued by Catena Media.',
+        site: '@catenamedia',
+        creator: '@catenamedia',
         images: ['/social/card-twitter.png'],
-    },
-    verification: {
-        google: '9y9dretKdifnWDdkbkT9Qm1PtWMIe3qz6R09Xkm8Cdc',
-        other: {
-            'msvalidate.01': '0C9605AF449480F57421EECCA9EB2B8A',
-        },
     },
     other: {
         'theme-color': '#FAFAFA',

@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Legacy Affiliate Dashboard v1",
+    "dateOpen": "2018-03-15",
+    "dateClose": "2023-12-31",
+    "link": "https://internal.catena.media/projects/legacy-dashboard-sunset",
+    "description": "The original affiliate dashboard that served our partners for 5 years. Replaced by the new unified dashboard with improved analytics and user experience.",
+    "type": "service"
+  },
+  {
+    "name": "Old Content Management System",
+    "dateOpen": "2017-01-10",
+    "dateClose": "2023-08-15",
+    "link": "https://internal.catena.media/projects/cms-migration",
+    "description": "Legacy CMS used for managing website content across multiple brands. Migrated to a more modern, headless CMS solution.",
+    "type": "service"
+  },
+  {
+    "name": "Mobile App Analytics Tool",
+    "dateOpen": "2019-06-01",
+    "dateClose": "2024-02-29",
+    "link": "https://internal.catena.media/projects/analytics-consolidation",
+    "description": "Internal mobile analytics tracking tool. Functionality merged into our unified analytics platform.",
+    "type": "app"
+  },
+  {
+    "name": "Beta Testing Platform",
+    "dateOpen": "2020-11-20",
+    "dateClose": "2024-01-15",
+    "link": "https://internal.catena.media/projects/testing-platform-retirement",
+    "description": "Internal beta testing platform for new features. Replaced by integrated testing workflows in our main development pipeline.",
+    "type": "service"
+  },
+  {
+    "name": "Legacy API Gateway v2",
+    "dateOpen": "2019-04-12",
+    "dateClose": "2023-11-30",
+    "link": "https://internal.catena.media/projects/api-gateway-v3-migration",
+    "description": "Second generation API gateway that served internal services. Upgraded to v3 with better performance and security features.",
+    "type": "service"
+  }
+]
