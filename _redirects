@@ -1,0 +1,6 @@
+# Cloudflare Pages redirects
+/graveyard.json /api/graveyard 301
+/umami.js /_next/static/umami.js 301
+
+# SPA fallback for client-side routing
+/* /index.html 200

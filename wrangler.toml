@@ -1,3 +1,6 @@
 name = "killed-by-catena-media"
 compatibility_date = "2024-09-24"
 pages_build_output_dir = "out"
+
+[build]
+command = "pnpm run build"
